@@ -1,0 +1,19 @@
+1)
+S = aSa | bSb | ε
+if ε is not allowed, aSa | bSb | aa | bb
+
+2)
+S = AcB
+A = aA'
+A' = aA' | ε
+B = bB'
+B' = bB' | ε
+
+S -> AcB
+  -> aA'cB
+  -> aaA'cB (A' -> aA')
+  -> aaaA'cB (A' -> aA')
+  -> aaacB (A' -> ε)
+  -> aaacbB'
+  -> aaacbbB' (B' -> bB')
+  -> aaacbb (B' -> ε)
